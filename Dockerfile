@@ -25,6 +25,7 @@ RUN poetry install
 # Make port 8000 available to the world outside this container
 EXPOSE 8000
 
+
 # Run the app. CMD can be overridden when starting the container
 # poetry run uvicorn app.main:app  --host 0.0.0.0 --reload
 CMD ["poetry", "run", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--reload"]
