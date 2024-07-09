@@ -34,19 +34,22 @@ async def lifespan(app: FastAPI):
 
 
 
-app:FastAPI =  FastAPI(lifespan=lifespan, title="FastAPI Neon Todo API", version="2.0.0",
-#                         servers=[
-#      {
-#         "url": "http://localhost:8000",
-#         "description": "Local server"
-#     }
-# ]
-)
+# app:FastAPI =  FastAPI(lifespan=lifespan, title="FastAPI Neon Todo API", version="2.0.0",
+# #                         servers=[
+# #      {
+# #         "url": "http://localhost:8000",
+# #         "description": "Local server"
+# #     }
+# # ]
+# )
+
+
+app:FastAPI =  FastAPI()
 
 
 
-def create_db_and_tables():
-    SQLModel.metadata.create_all(engine)
+# def create_db_and_tables():
+#     SQLModel.metadata.create_all(engine)
 
 
 
