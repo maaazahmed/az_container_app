@@ -25,6 +25,11 @@ def read_root():
 
 
 
+@app.get("/about")
+def read_root():
+    return {"Hello": "about" }
+
+
 
 
 
